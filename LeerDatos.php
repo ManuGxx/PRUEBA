@@ -44,7 +44,7 @@ include('conexion.php'); // Asegúrate de que el archivo 'conexion.php' esté en
 
 // Consulta para obtener los datos de la tabla "alumnos"
 $query = "SELECT id, nombre, edad, curso FROM alumnos 
-WHERE edad > 20";
+WHERE edad < 20";
 $resultado = mysqli_query($conexion, $query);
 
 // Verificar si la consulta fue exitosa
