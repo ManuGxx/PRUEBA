@@ -8,7 +8,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $nombre = $_POST['nombre'];
 
         // Consultar los datos de la base de datos filtrados por nombre
-        $query = "SELECT id, nombre, edad, curso, promociona FROM alumnos WHERE nombre LIKE '%$nombre%'";
+        $query = "SELECT id, nombre, edad, curso, promociona FROM alumnos 
+        WHERE nombre LIKE '%$nombre%'";
         $resultado = mysqli_query($conexion, $query);
 
         // Verificar si la consulta fue exitosa

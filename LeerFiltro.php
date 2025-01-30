@@ -16,7 +16,7 @@ if (!empty($nombre)) {
     include('conexion.php');
     //Creamos la variable "Query" con la consulta que queremos realizar
     $query = "SELECT id, nombre, edad, curso FROM alumnos 
-    WHERE LIKE '%$nombre%'";   //Con LIKE y %% para que algo que si busca, por ejemplo, "Juan López", le filtre por todos los que se llaman Juan
+    WHERE nombre LIKE '%$nombre%'";   //Con LIKE y %% para que algo que si busca, por ejemplo, "Juan López", le filtre por todos los que se llaman Juan
     $resultado = mysqli_query($conexion, $query); //Lanzamos la consulta a traves de la variable "Query"
 
     if (!$resultado) {
