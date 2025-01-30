@@ -4,19 +4,19 @@
 </form>
 <h3>Filtros: </h3>
 Por nombre:
-<form action="LeerFiltro.php" method="POST">
+<form action="LeerFiltroApuntes.php" method="POST">
     <input type="text" name="nombre" placeholder="Escribe un nombre">
     <button type="submit">Ver</button>
 </form>
 
 Por edad:
-<form action="LeerFiltro.php" method="POST">
+<form action="LeerFiltroApuntes.php" method="POST">
     <input type="text" name="edad" placeholder="Escribe una edad">
     <button type="submit">Ver</button>
 </form>
 
 Promocion: 
-<form action="LeerFiltro.php" method="POST">
+<form action="LeerFiltroApuntes.php" method="POST">
 <select name="promocion">
     <option value="todos" selected="selected">Todas</option>
     <option value="ASIR2">ASIR2</option>
